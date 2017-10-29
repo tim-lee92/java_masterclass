@@ -22,3 +22,8 @@ In `switch` statements: you need a `break;` in each case or else it will keep go
 * Syntax: `do {} while {};`
 
 A `class` is a blueprint for an object.
+
+Class constructors go by the syntax `public [className]`, you don't need the keyword to state what datatype it is going to return.
+* Recall method overloading, which can be done with constructors.
+* You can call another constructor within another constructor.
+  * Must be the very first line.
