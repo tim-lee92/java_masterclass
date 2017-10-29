@@ -27,3 +27,6 @@ Class constructors go by the syntax `public [className]`, you don't need the key
 * Recall method overloading, which can be done with constructors.
 * You can call another constructor within another constructor.
   * Must be the very first line.
+* Using `super` must be used explicitly to call the super class method if you have an `@Override` in the current class.
+
+Compositions deal with a "has a" relationship.
