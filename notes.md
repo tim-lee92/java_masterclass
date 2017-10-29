@@ -8,3 +8,17 @@ Expressions vs statements:
 If/Else blocks:
 * The `{}` are not needed if the code block is only one line
   * Cannot do multiline without `{}`
+  * Subsequent lines will not be part of the statement and will be executed outside of the If/Else statement
+
+Method overloading:
+* Use of the same method name with different parameters
+* "Unique method signature" can be unique name, or unique parameters needed by the method.
+
+In `switch` statements: you need a `break;` in each case or else it will keep going falling into next case statements until a break is found. For instance, in the `default:` case, you do not need a `break;` if it's in the last line.
+* With older versions of java, we can use switch with the primitive types: short, byte, char, and int
+* Since Java 7, switch statements work with `String`s
+
+`do` or do-while will execute a block at least once.
+* Syntax: `do {} while {};`
+
+A `class` is a blueprint for an object.
