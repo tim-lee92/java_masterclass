@@ -5,6 +5,18 @@ public class BankAccount {
   private String email;
   private String phone;
 
+  public BankAccount() {
+    System.out.println("Empty constructor called.");
+  }
+
+  public BankAccount(int accountNumber, double balance, String customerName, String email, String phone) {
+    this.accountNumber = accountNumber;
+    this.balance = balance;
+    this.customerName = customerName;
+    this.email = email;
+    this.phone = phone;
+  }
+
   public void setAccountNumber(int accountNumber) {
     this.accountNumber = accountNumber;
   }
@@ -25,16 +37,16 @@ public class BankAccount {
     this.phone = phone;
   }
 
-  public int getBalance() {
+  public double getBalance() {
     return this.balance;
   }
 
-  public int depositFunds(int amount) {
+  public double depositFunds(double amount) {
     this.balance = this.balance + amount;
     return this.balance;
   }
 
-  public int withdrawFunds(int amount) {
+  public double withdrawFunds(double amount) {
     if (this.balance - amount < 0) {
       System.out.println("Your account has insufficient funds.");
     } else {
